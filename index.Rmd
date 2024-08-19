@@ -1,0 +1,25 @@
+--- 
+title: "Data Computing With Python"
+author: "Terry Letsche"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: LetscheT/DataComputingWithPython
+description: "This book demonstrates the concepts in 'Data Computing: an introduction to wrangling and visualization with R' using Python."
+---
+
+# Preface
+
+This book is a companion to Kaplan and Beckman's [Data Computing: an introduction to wrangling and visualization with R](https://dtkaplan.github.io/DataComputingEbook/). In the Data Wrangling and Visualization course I teach, I use Kaplan and Beckman for roughly the first ten weeks of the fourteen week term, and use the remaining time to demonstrate the same ideas using Python.
+
+Our CS1 course uses Python, so all students taking this course should already have a basic understanding of Python syntax. Data structures would include numbers, strings, and lists, as well as objects. As such, this book is emphatically _not_ a book on how to do data science with Python! Python syntax will only be discussed to the extent required to help students understand common pitfalls and their solutions. For readers needing a Python introduction, I'd suggest Zelle 4/e and for Python with data science, McKinney 3/e.
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
